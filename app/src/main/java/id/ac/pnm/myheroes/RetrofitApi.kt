@@ -6,9 +6,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitApi {
 
-    private const val BASE_URL = "http://indonesia-public-static-api.vercel.app"
+    private const val BASE_URL = "https://indonesia-public-static-api.vercel.app"
 
-    val retrofit = Retrofit.Builder()
+    private val retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
