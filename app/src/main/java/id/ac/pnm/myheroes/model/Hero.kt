@@ -11,5 +11,5 @@ data class Hero(
     @SerializedName("ascension_year")
     val ascensionYear: Int? = null,
     @SerializedName("birth_year")
-    val birthYear: Int? = null
+    val birthYear: Any? = null
 )
